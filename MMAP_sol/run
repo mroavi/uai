@@ -7,8 +7,11 @@ if [[ $# -ne 1 ]] ; then
   exit 1
 fi
 
+# Get the hostname
+nodename=$(uname -n)
+
 # Location of the `Merlin` binary
-merlin_bin="$HOME/repos/merlin/bin/merlin"
+merlin_bin="$HOME/repos/$nodename/merlin/bin/merlin"
 
 # Run merlin with the WMB algorithm to solve the MAP task
 $merlin_bin --input-file $1 --evidence-file $1.evid --query-file $1.query --task MMAP --algorithm wmb
