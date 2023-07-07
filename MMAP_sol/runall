@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# This script is intended to execute a 'run' script located in the current
+# directory. It searches for '.uai' files in the directory provided as an
+# argument to this script, including all of its subdirectories. The 'run'
+# script is then executed for each '.uai' file found.
+
+# https://superuser.com/questions/461946/can-i-use-pipe-output-as-a-shell-script-argument
+
+# Check that only 1 argument is passed
+if [[ $# -ne 1 ]] ; then
+  echo "Usage: $0 <DIR>"
+  echo "Example: $0 ../MMAP_prob"
+  exit 1
+fi
+
+fd -e .uai . $1 | xargs -I {} ./run {}
