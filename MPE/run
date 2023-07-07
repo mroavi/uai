@@ -3,11 +3,12 @@
 # Check that only 1 argument is passed
 if [[ $# -ne 1 ]] ; then
   echo "Usage: $0 PATH"
-  echo "Example: $0 ../MPE/Grids_18.uai"
+  echo "Example: $0 Grids_18.uai"
   exit 1
 fi
 
 # Location of the binary
 stc_bin="$HOME/repos/subproblem-tree-calibration/bin/solver"
-## Run the binary for 20 mins (20 * 60)
+
+# Run the binary for 20 mins (20 * 60)
 $stc_bin $1 $1.evid $1.MPE 1200
