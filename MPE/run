@@ -10,5 +10,5 @@ fi
 # Location of the binary
 stc_bin="$HOME/repos/subproblem-tree-calibration/bin/solver"
 
-# Run the binary for 20 mins (20 * 60)
-$stc_bin $1 $1.evid $1.MPE 1200
+# Run the binary for 5 mins
+$stc_bin $1 $1.evid $1.MPE 300
