@@ -12,3 +12,5 @@ tar -czvf uai2014.tar.gz <PATH/TO/REPO>
 ```
 
 Replace `<PATH/TO/REPO>` with the actual path to the repository on your machine.
+
+This repository uses <https://git-lfs.com/>.
