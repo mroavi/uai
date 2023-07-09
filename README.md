@@ -8,11 +8,8 @@ To regenerate the compressed tarball (uai2014.tar.gz) whenever the repository
 content changes, follow these steps from the root directory of the repository:
 
 ```bash
-tar -czvf uai2014.tar.gz <PATH/TO/REPO>/uai2014
+tar -czvf uai2014.tar.gz -C uai2014/ .
 ```
-
-Replace `<PATH/TO/REPO>` with the actual path to the repository on your machine.
-
 
 To regenerate the `Artifacts.toml` file after updating the tarball, follow these
 steps from the repository's root directory:
