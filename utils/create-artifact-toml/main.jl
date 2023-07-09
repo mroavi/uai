@@ -6,11 +6,18 @@
 
 using ArtifactUtils
 
+artifact_toml = joinpath(@__DIR__, "Artifacts.toml")
+
+# Remove the artifact TOML file (this solves the problem that it does not get
+# updated when this file is run after the tarball has been updated)
+rm(artifact_toml; force=true)
+
 add_artifact!(
-  "Artifacts.toml",
+  artifact_toml,
   "uai2014",
   "https://github.com/mroavi/uai-2014-inference-competition/raw/main/uai2014.tar.gz",
   force=true,
 )
 
-import Pkg; Pkg.ensure_artifact_installed("uai2014", "Artifacts.toml")
+import Pkg;
+Pkg.ensure_artifact_installed("uai2014", "Artifacts.toml");
