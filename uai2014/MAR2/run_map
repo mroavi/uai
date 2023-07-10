@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check that only 1 argument is passed
+if [[ $# -ne 1 ]] ; then
+  echo "Usage: $0 PATH"
+  echo "Example: $0 Grids_18.uai"
+  exit 1
+fi
+
+# Location of the binary
+stc_bin="$HOME/repos/subproblem-tree-calibration/bin/solver"
+
+# Run the binary for 30 secs
+$stc_bin $1 $1.evid $1.MAP 30
