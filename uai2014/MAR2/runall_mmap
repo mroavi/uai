@@ -13,5 +13,5 @@ if [ $# -ne 0 ]; then
   exit 1
 fi
 
-# Execute the 'run_map' script for each '.uai' file
-fd -e .uai . | xargs -I {} ./run_map {}
+# Execute the 'run_mmap' script for each '.uai' file
+fd -e .uai . | xargs -I {} ./run_mmap {}

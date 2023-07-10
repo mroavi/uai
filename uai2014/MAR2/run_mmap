@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check that only 1 argument is passed
+if [[ $# -ne 1 ]] ; then
+  echo "Usage: $0 PATH"
+  echo "Example: $0 ../MMAP/Grids_18.uai"
+  exit 1
+fi
+
+# Location of the `Merlin` binary
+merlin_bin="$HOME/repos/$(uname -n)/merlin/bin/merlin"
+
+# Run merlin with the WMB algorithm to solve the MAP task
+$merlin_bin --input-file $1 --evidence-file $1.evid --query-file $1.query --task MMAP --algorithm wmb
