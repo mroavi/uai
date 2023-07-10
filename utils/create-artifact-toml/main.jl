@@ -8,8 +8,9 @@ using ArtifactUtils
 
 artifact_toml = joinpath(@__DIR__, "Artifacts.toml")
 
-# Remove the artifact TOML file (this solves the problem that it does not get
-# updated when this file is run after the tarball has been updated)
+# Remove the artifact TOML file 
+# (this solves the problem that it does not get updated if it exists when this
+# file is run after the tarball has been updated)
 rm(artifact_toml; force=true)
 
 add_artifact!(
