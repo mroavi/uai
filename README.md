@@ -27,3 +27,6 @@ You will find the updated `Artifacts.toml` file inside the
 
 This repository utilizes <https://git-lfs.com/> for handling large file storage.
 If you are using Arch Linux, you can install Git LFS by running `yay -S git-lfs`.
+
+**Note**: The directory `MAR2` is a copy of `MAR` that includes the solutions
+for the MAP, MMAP, and PR tasks as well.
