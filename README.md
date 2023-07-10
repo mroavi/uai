@@ -11,6 +11,9 @@ content changes, follow these steps from the root directory of the repository:
 tar -czvf uai2014.tar.gz -C uai2014/ .
 ```
 
+Before proceeding with the next step, remember to commit and push the updated
+tarball to the remote repository.
+
 To regenerate the `Artifacts.toml` file after updating the tarball, follow these
 steps from the repository's root directory:
 
