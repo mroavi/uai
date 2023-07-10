@@ -12,3 +12,6 @@ stc_bin="$HOME/repos/subproblem-tree-calibration/bin/solver"
 
 # Run the binary for 5 mins
 $stc_bin $1 $1.evid $1.MAP 300
+
+# Insert the text "MAP" in the first line
+sed -i '1s/^/MAP\n/' $1.MAP
