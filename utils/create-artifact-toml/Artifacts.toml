@@ -1,6 +1,6 @@
 [uai2014]
-git-tree-sha1 = "d05c5e541cc06f1cb4d8e24c1067e07472e36c24"
+git-tree-sha1 = "bb6f6ea656aecf7dba3f945ef371102f9493913e"
 
     [[uai2014.download]]
-    sha256 = "73c91cd68931aec562499ab66ed2326771b829aa715e790609c6a1b86c9a9ad8"
+    sha256 = "8cca9f24ad2db6a3a2fae6b253dbf169429c3e23d358e92e5f18a64ae2540117"
     url = "https://github.com/mroavi/uai-2014-inference-competition/raw/main/uai2014.tar.gz"
