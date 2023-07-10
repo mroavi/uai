@@ -10,5 +10,11 @@ fi
 # Location of the `Merlin` binary
 merlin_bin="$HOME/repos/$(uname -n)/merlin/bin/merlin"
 
-# Run merlin with the WMB algorithm to solve the MAP task
-$merlin_bin --input-file $1 --evidence-file $1.evid --query-file $1.query --task PR --algorithm wmb
+# Run merlin with the WMB algorithm to solve the PR task
+$merlin_bin \
+  --input-file $1 \
+  --evidence-file $1.evid \
+  --query-file $1.query \
+  --task PR \
+  --algorithm wmb \
+  --output-format uai
