@@ -30,3 +30,19 @@ If you are using Arch Linux, you can install Git LFS by running `yay -S git-lfs`
 
 **Note**: The directory `MAR2` is a copy of `MAR` that includes the solutions
 for the MAP, MMAP, and PR tasks as well.
+
+## Reference Solution Scripts
+
+The scripts used to generate the reference solutions for the MAP and MMAP
+problems can be found in the `utils/create-reference-solutions` directory.
+
+To calculate the reference solutions for the MAP problems, we used a library
+called `subproblem-tree-calibration`, which can be found
+[here](https://ai.stanford.edu/~huayanw/).
+
+To calculate the reference solutions for the MMAP problems, we used Merlin,
+which can be found [here](https://ai.stanford.edu/~huayanw/).
+
+There are also two scripts that can be used to generate PR reference solutions
+with Merlin. However, we did not use these, as the UAI 2014 Inference
+Competition provides reference results for both this task and the MAR tasks.
